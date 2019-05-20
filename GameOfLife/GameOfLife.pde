@@ -29,6 +29,7 @@ void setup(){
   //setup rules
   //Standard Conway  B3S23
   //Cool maze        B3S12345
+  //Inverting Maze   B245678S
   born[3]=true;
   surv[2]=true;
   surv[3]=true;
@@ -118,6 +119,8 @@ void keyPressed(){
       }catch(NumberFormatException e){}
       break;
   }
+  if(speed<=0)
+    speed=1;
 }
 /*
 void mousePressed(){
